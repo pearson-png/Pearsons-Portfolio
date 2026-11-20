@@ -3,31 +3,126 @@
 <head>
     <title>Luka Pearson's Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Luka Pearson's Porfolio</h1>
         <div class="menu"></div>
-    <header>
-
+    </header>
+    
     <div class="main" id="about-me">
-        <h2>About Me</h1>
+        <h2>About Me</h2>
+        <p>I'm passionate about public service and love to dig into the details. I can do quick and dirty when the job calls for it, but I thrive when I get to make sure something gets done throroughly and accurately the first time. Send me out to survey assets or sit me behind a computer to ___ and I'll be happy either way!</p>
     </div>
-
+    
     <div class="main" id="projects">
-        <h2>Projects</h1>
+        <h2>Projects</h2>
+        <div class="main-grid">
+            <div class="card">
+                <img src="assets/Community-tree-viewer.png" alt="Screeshot of the Rapid Assessment Community Tree Report Viewer website. It contains a map of Minnesota, divided into counties, map filters on the left side of the screen. The Map tab is selected, but there are also tabs titled Table and About.">
+                <div class="card-content">
+                    <h3>Rapid Assessment Community Tree Report Viewer</h3>
+                    <p>Between surveying street trees, summarizing the results for over 300 MN towns, and building an Experience Builder web app to share the results, finishing up this project was a busy two years for me. This project taught me lots about hosting feature and tile layers on ArcGIS Enterprise and Azure, while also improving my report automation and tree identification skills.</p>
+                    <a href="https://gis.dnr.state.mn.us/arcgis/apps/experiencebuilder/experience/?id=84be7fddd5c74d35a45b71caa3bf1c2b" target="_blank">Explore the App</a>
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <img src="assets/hotspot-persistence.png" alt="A map of the northeast United States continental shelf and the east coast states. Colors ranging from a dark blue to a bright yellow indicate how persistent marine species hotspots are across the shelf.">
+                    <div class="card-content">
+                        <h3>Exploring the Spatiotemporal Relationship Between Marine Species Richness and Sea Temperature</h3>
+                        <p>This multi-year, ongoing project has been a deep dive into statistically representing where you could find the largest variety of fish at any point in time off of the United States' east coast. The goal is to parametize the movement high-diversity areas through time and space so we can predict which areas would be most benefial for marine protections as climate change progresses and and ecosystems further destabalize.</p>
+                        <a href="https://docs.google.com/document/d/13Gl8vXcmlSaHt4KASBmKrfOcQSFdg6GF/edit?usp=drive_link&ouid=103235267816625658965&rtpof=true&sd=true" target="_blank">Read the Paper</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="assets/waste-survey.png" alt="Class picture, including Luka Pearson, of people in a warehouse wearing full-body paper suits and blue gloves, posing in front of two scales.">
+                <div class="card-content">
+                    <h3>Analysis of Wellesley College's Waste Management</h3>
+                    <p>I was the lead data editor for my bachelor capstone project analyzing and recommending improvements for our college's municipal waste management. In addition to being a project manager, I applied for and recieved a grant for our lifecycle analysis software, designed the waste audit's data collection, and extrapolated a year's worth of total waste tonnage from the findings. Talk about a busy five months!</p>
+                    <a href="https://drive.google.com/file/d/1nGG7_Eai6SkqBwXnt5Kz_y4J-TRjPk8u/view?usp=drive_link" target="_blank">Read the Report</a>
+                </div>
+            </div>
+        </div>
     </div>
-
+    
     <div class="main" id="service-outreach">
         <h2>Service & Outreach</h2>
+        <div class="main-grid">
+            <div class="card">
+                <div class="card-content">
+                    <h3>Vice President of the GIS Student Organization (GISSO)</h3>
+                    <p>Organizing social events, alumni panels, and career fairs is the name of the game.</p>
+                    <a href="https://www.instagram.com/gissoumn/" target="_blank">GISSO's Instagram</a>
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Recycling and Waste Education</h3>
+                        <p>From scrapping old computers to explaining the ins and outs of Hennepin County's recycling, I make sure to keep my hands dirty even though I don't get to clean up river trash on the daily anymore. </p>
+                        <a href="https://www.freegeektwincities.org/volunteer" target="_blank">Free Geek Electronics Rescue</a>
+                        <a href="https://www.hennepincounty.gov/government/volunteering/community-recycling-ambassadors" target="_blank">Hennepin's Community Recycling Ambassadors</a>
+                        <a href="https://www.savebackriver.org/" target="_blank">Back River Restoration Committee</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-content">
+                    <h3>Analysis of Wellesley College's Waste Management</h3>
+                    <p>This was my environmental studies capstone project from undergrad. It was a semester long, class-wide project that I was the lead data editor for. I designed the waste audit's data collection and extrapolated a year's worth of total waste tonnage from the findings.</p>
+                    <a href="https://drive.google.com/file/d/1nGG7_Eai6SkqBwXnt5Kz_y4J-TRjPk8u/view?usp=drive_link" target="_blank">Read the Report</a>
+                </div>
+            </div>
+        </div>
     </div>
-
+    
     <div class="main" id="resume">
         <h2>Resume</h2>
     </div>
-
-    <footer>
-        
+    
+    <footer class="footer-minimal" role="contentinfo">
+        <div class="footer-minimal__container">
+            
+            <p class="footer-minimal__copyright">
+                &copy; 2026 Luka Pearson's Portfolio. Coded by Luka with light assistance from Copilot and Gemini AI.
+            </p>
+            
+            <nav class="footer-minimal__nav" aria-label="Footer Social Media Links">
+                <ul>
+                    <li>
+                        <a href="https://linkedin.com/in/luka-pearson" aria-label="Luka Pearson's LinkedIn Profile" target="_blank">
+                            <!-- SVG icon for LinkedIn -->
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <title>LinkedIn</title>
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/pearson-png" aria-label="Luka Pearson's GitHub Profile" target="_blank">
+                            <!-- SVG icon for GitHub -->
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <title>GitHub</title>
+                                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:lukapear27@gmail.com" aria-label="Email Luka Pearson" target="_blank">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <title>Email</title>
+                                <path d="M1.5 4h21A1.5 1.5 0 0 1 24 5.5v13A1.5 1.5 0 0 1 22.5 20h-21A1.5 1.5 0 0 1 0 18.5v-13A1.5 1.5 0 0 1 1.5 4zm0 2v.217l10.5 7.875L22.5 6.217V6h-21zm21 2.092-9.603 7.202a1.5 1.5 0 0 1-1.794 0L1.5 8.092V18.5h21V8.092z"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </footer>
-
+    
 </body>
